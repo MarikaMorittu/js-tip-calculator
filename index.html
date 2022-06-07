@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="logo" src="./assets/img/SPLITTER.png" alt="Logo" />
+    <main>
+      <div class="container__left">
+        <div class="bill">
+          <h4>Bill</h4>
+          <div class="box__input">
+            <img src="./assets/img/$.png" alt="dollaro" />
+            <input class="input__bill" type="number"  placeholder="0"/>
+          </div>
+        </div>
+        <div class="select__tip">
+          <h4>Select tip %</h4>
+          <div class="box__button">
+            <div class="percent 5"><p>5%</p></div>
+            <div class="percent 10"><p>10%</p></div>
+            <div class="percent 15"><p>15%</p></div>
+            <div class="percent 25"><p>25%</p></div>
+            <div class="percent 50"><p>50%</p></div>
+            <input class="input__custom" type="number" placeholder="custom" />
+          </div>
+        </div>
+        <div class="number__people">
+          <div class="number">
+            <h4>Number of people</h4>
+          </div>
+          <div class="box__input">
+            <img src="./assets/img/Group 8.png" alt="people" />
+            <input class="input__people" type="number"  placeholder="0" />
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <div>
+          <div class="box tip__amount">
+            <div class="info">
+              <h4>Tip amount</h4>
+              <p>/ person</p>
+            </div>
+           <span>$<span class="tipOut">0.00</span></span>
+          </div>
+          <div class="box total">
+            <div class="info">
+              <h4>Total</h4>
+              <p>/ person</p>
+            </div>
+            <span>$<span class="totalOut">0.00</span></span>
+          </div>
+        </div>
+        <div class="reset__button">
+          <button class="button__reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
