@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- link css -->
     <link rel="stylesheet" href="style.css" />
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,16 +16,21 @@
     />
   </head>
   <body>
+    <!-- logo -->
     <img class="logo" src="./assets/img/SPLITTER.png" alt="Logo" />
+    <!-- main -->
     <main>
+      <!-- container left -->
       <div class="container__left">
+        <!-- bill -->
         <div class="bill">
           <h4>Bill</h4>
           <div class="box__input">
             <img src="./assets/img/$.png" alt="dollaro" />
-            <input class="input__bill" type="number"  placeholder="0"/>
+            <input class="input__bill " type="number"  placeholder="0" required/>
           </div>
         </div>
+        <!-- select-tip  -->
         <div class="select__tip">
           <h4>Select tip %</h4>
           <div class="box__button">
@@ -36,18 +42,22 @@
             <input class="input__custom" type="number" placeholder="custom" />
           </div>
         </div>
+        <!-- number-people -->
         <div class="number__people">
           <div class="number">
             <h4>Number of people</h4>
+            <span class="error">can't be zero</span>
           </div>
-          <div class="box__input">
+          <div class="box__input people__box">
             <img src="./assets/img/Group 8.png" alt="people" />
-            <input class="input__people" type="number"  placeholder="0" />
+            <input class="input__people" type="number"  placeholder="0" required/>
           </div>
         </div>
       </div>
+      <!-- container right -->
       <div class="container__right">
         <div>
+          <!-- tip-amount -->
           <div class="box tip__amount">
             <div class="info">
               <h4>Tip amount</h4>
@@ -55,6 +65,7 @@
             </div>
            <span>$<span class="tipOut">0.00</span></span>
           </div>
+          <!-- tip-total -->
           <div class="box total">
             <div class="info">
               <h4>Total</h4>
@@ -63,8 +74,9 @@
             <span>$<span class="totalOut">0.00</span></span>
           </div>
         </div>
+        <!-- button-reset -->
         <div class="reset__button">
-          <button class="button__reset">Reset</button>
+          <button class="button__reset">reset</button>
         </div>
       </div>
     </main>
